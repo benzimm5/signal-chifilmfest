@@ -24,7 +24,7 @@ const ACTORS = {
   instagram: "apify~instagram-profile-scraper",
   youtube:   "streamers~youtube-scraper",
   tiktok:    "clockworks~tiktok-scraper",
-  linkedin:  "scrapio~linkedin-company-about-scraper",
+  linkedin:  "dev_fusion~Linkedin-Company-Scraper",
   facebook:  "apify~facebook-pages-scraper",
 };
 
@@ -152,7 +152,7 @@ function buildInput(platformId, handle) {
     case "tiktok":
       return { profiles: [`https://www.tiktok.com/@${handle}`], resultsPerPage: 20 };
     case "linkedin":
-      return { companyUrls: [`https://www.linkedin.com/company/${handle}/`] };
+  return { companyUrls: [`https://www.linkedin.com/company/${handle}/`] };
     case "facebook":
       return { startUrls: [{ url: `https://www.facebook.com/${handle}` }], maxPosts: 10 };
     default: return {};
