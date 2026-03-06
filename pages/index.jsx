@@ -385,7 +385,7 @@ export default function Dashboard() {
 
       {/* ── Header ── */}
       <div style={{background:"#fff",borderBottom:"1px solid #e5e7eb",padding:"0 24px"}}>
-        <div style={{maxWidth:1100,margin:"0 auto",display:"flex",alignItems:"center",gap:16,height:60}}>
+        <div style={{maxWidth:1100,margin:"0 auto",display:"flex",alignItems:"center",gap:16,height:90}}>
           <ClientLogo size={75}/>
           <div style={{flex:1}}>
             <div style={{fontSize:15,fontWeight:800,color:"#111",lineHeight:1}}>{CLIENT.name}</div>
