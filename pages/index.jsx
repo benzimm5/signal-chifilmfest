@@ -253,7 +253,7 @@ function PostCard({ post, rank }) {
 }
 
 // ─── Logo ─────────────────────────────────────────────────────────────────────
-function ClientLogo({ size=100 }) {
+function ClientLogo({ size=75 }) {
   const { accentColor, logoUrl, logoText, name } = CLIENT;
   if (logoUrl) return <img src={logoUrl} alt={name} style={{width:size,height:size,borderRadius:8,objectFit:"contain"}}/>;
   return (
@@ -386,7 +386,7 @@ export default function Dashboard() {
       {/* ── Header ── */}
       <div style={{background:"#fff",borderBottom:"1px solid #e5e7eb",padding:"0 24px"}}>
         <div style={{maxWidth:1100,margin:"0 auto",display:"flex",alignItems:"center",gap:16,height:60}}>
-          <ClientLogo size={36}/>
+          <ClientLogo size={75}/>
           <div style={{flex:1}}>
             <div style={{fontSize:15,fontWeight:800,color:"#111",lineHeight:1}}>{CLIENT.name}</div>
             <div style={{fontSize:11,color:"#9ca3af",marginTop:1,fontWeight:500}}>Social Dashboard</div>
