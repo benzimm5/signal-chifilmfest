@@ -152,7 +152,7 @@ function buildInput(platformId, handle) {
     case "tiktok":
       return { profiles: [`https://www.tiktok.com/@${handle}`], resultsPerPage: 20 };
     case "linkedin":
-  return { companyUrls: [`https://www.linkedin.com/company/${handle}/`] };
+  return { profileUrls: [`https://www.linkedin.com/company/${handle}`] };
     case "facebook":
       return { startUrls: [{ url: `https://www.facebook.com/${handle}` }], maxPosts: 10 };
     default: return {};
