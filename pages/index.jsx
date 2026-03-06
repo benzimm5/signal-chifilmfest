@@ -253,7 +253,7 @@ function PostCard({ post, rank }) {
 }
 
 // ─── Logo ─────────────────────────────────────────────────────────────────────
-function ClientLogo({ size=52 }) {
+function ClientLogo({ size=100 }) {
   const { accentColor, logoUrl, logoText, name } = CLIENT;
   if (logoUrl) return <img src={logoUrl} alt={name} style={{width:size,height:size,borderRadius:8,objectFit:"contain"}}/>;
   return (
