@@ -119,10 +119,10 @@ function parseTiktok(data) {
 
 function parseLinkedin(data) {
   const company = data?.[0];
-  const followerStr = company?.followers || company?.followersCount || "";
-  const followers = typeof followerStr === "number" ? followerStr :
-    parseInt((followerStr+"").replace(/[^0-9]/g,"")) || null;
-  return { followers, posts: [] };
+  return {
+    followers: company?.followerCount ?? null,
+    posts: [],
+  };
 }
 
 function parseFacebook(data) {
