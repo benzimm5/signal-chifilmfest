@@ -5,7 +5,7 @@ import { useState, useEffect, useMemo } from "react";
 const CLIENT = {
   name:        "Chicago International Film Festival",
   logoText:    "CIFF",
-  logoUrl:     "",
+  logoUrl:     "https://pbs.twimg.com/profile_images/1881808955409604609/T4VpCtpd_400x400.jpg",
   accentColor: "#111111",
   handles: {
     twitter:   "chifilmfest",
@@ -253,7 +253,7 @@ function PostCard({ post, rank }) {
 }
 
 // ─── Logo ─────────────────────────────────────────────────────────────────────
-function ClientLogo({ size=36 }) {
+function ClientLogo({ size=52 }) {
   const { accentColor, logoUrl, logoText, name } = CLIENT;
   if (logoUrl) return <img src={logoUrl} alt={name} style={{width:size,height:size,borderRadius:8,objectFit:"contain"}}/>;
   return (
