@@ -23,7 +23,7 @@ const ACTORS = {
   twitter:   "apidojo/tweet-scraper",
   instagram: "apify/instagram-profile-scraper",
   youtube:   "streamers/youtube-scraper",
-  tiktok:    "clockworks/tiktok-scraper",
+  tiktok:    "clockworks/tiktok-profile-scraper",
   linkedin:  "scrapio/linkedin-company-about-scraper",
   facebook:  "apify/facebook-pages-scraper",
 };
