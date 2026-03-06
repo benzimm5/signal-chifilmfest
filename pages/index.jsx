@@ -20,12 +20,12 @@ const CLIENT = {
 
 // Apify actor IDs
 const ACTORS = {
-  twitter:   "apidojo/tweet-scraper",
-  instagram: "apify/instagram-profile-scraper",
-  youtube:   "streamers/youtube-scraper",
-  tiktok:    "clockworks/tiktok-profile-scraper",
-  linkedin:  "scrapio/linkedin-company-about-scraper",
-  facebook:  "apify/facebook-pages-scraper",
+  twitter:   "apidojo~tweet-scraper",
+  instagram: "apify~instagram-profile-scraper",
+  youtube:   "streamers~youtube-scraper",
+  tiktok:    "clockworks~tiktok-scraper",
+  linkedin:  "scrapio~linkedin-company-about-scraper",
+  facebook:  "apify~facebook-pages-scraper",
 };
 
 const PLATFORMS = [
